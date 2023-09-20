@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1137ad18-5c5b-4b6b-a334-abafba46269e" name="Changes" comment="Correção .gitignore">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1137ad18-5c5b-4b6b-a334-abafba46269e" name="Changes" comment="Correção na estrutura">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +19,12 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
   "associatedIndex": -1
 }]]></component>
   <component name="ProjectId" id="2VfrgcWygdnPTTf3EfA2akfLjg6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,9 +36,18 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Projetos/DIO/dio-trilha-java-basico",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projetos\DIO\dio-trilha-java-basico" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projetos\DIO\dio-trilha-java-basico\.idea" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695238089713</updated>
-      <workItem from="1695238093331" duration="108000" />
+      <workItem from="1695238093331" duration="291000" />
+      <workItem from="1695238394740" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="Correção .gitignore">
       <option name="closed" value="true" />
@@ -52,7 +67,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695238153537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correção .gitignore">
+      <option name="closed" value="true" />
+      <created>1695238208444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695238208444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correção na estrutura">
+      <option name="closed" value="true" />
+      <created>1695238318254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695238318254</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correção .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção .gitignore" />
+    <MESSAGE value="Correção na estrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção na estrutura" />
   </component>
 </project>
