@@ -11,24 +11,21 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        int numberAccount;
-        String agency, customerName;
-        double balance;
-
-        try {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int numberAccount;
+            String agency;
+            String customerName;
+            double balance;
             numberAccount = requestNumberAccount(scanner);
             agency = requestAgency(scanner);
             customerName = requestCustomerName(scanner);
             balance = requestBalance(scanner);
 
             showAccountCreated(numberAccount, agency, customerName, balance);
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Operação Cancelada, por favor, verifique os valores digitados!!");
         }
-
-        scanner.close();
     }
 
     private static int requestNumberAccount(Scanner scanner) {
