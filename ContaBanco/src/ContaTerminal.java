@@ -13,18 +13,15 @@ public class ContaTerminal {
     public static void main(String[] args) {
 
         try (Scanner scanner = new Scanner(System.in)) {
-            int numberAccount;
-            String agency;
-            String customerName;
-            double balance;
-            numberAccount = requestNumberAccount(scanner);
-            agency = requestAgency(scanner);
-            customerName = requestCustomerName(scanner);
-            balance = requestBalance(scanner);
+
+            int numberAccount = requestNumberAccount(scanner);
+            String agency = requestAgency(scanner);
+            String customerName = requestCustomerName(scanner);
+            double balance = requestBalance(scanner);
 
             showAccountCreated(numberAccount, agency, customerName, balance);
         } catch (Exception e) {
-            System.out.println("Operação Cancelada, por favor, verifique os valores digitados!!");
+            System.err.println("Operação Cancelada, por favor, verifique os valores digitados!!");
         }
     }
 
