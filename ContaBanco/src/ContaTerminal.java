@@ -1,17 +1,61 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+/**
+ * <h1>ContaTerminal</h1>
+ * A Conta Terminal exibe no terminal as informações de Numero da Conta, Agencia, Nome Cliente e Saldo informados pelo Cliente via terminal
+ * <p>
+ *
+ * @author  Paulo Bof
+ * @version 1.0
+ * @since   20/09/2023
+ */
+import java.util.Scanner;
+
 public class ContaTerminal {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner scanner = new Scanner(System.in);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int numberAccount;
+        String agency, customerName;
+        double balance;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        try {
+            numberAccount = requestNumberAccount(scanner);
+            agency = requestAgency(scanner);
+            customerName = requestCustomerName(scanner);
+            balance = requestBalance(scanner);
+
+            showAccountCreated(numberAccount, agency, customerName, balance);
+        }catch (Exception e) {
+            System.out.println("Operação Cancelada, por favor, verifique os valores digitados!!");
         }
+
+        scanner.close();
+    }
+
+    private static int requestNumberAccount(Scanner scanner) {
+        System.out.println("Por favor, digite o numero de sua conta bancária:");
+        return scanner.nextInt();
+    }
+    private static String requestAgency(Scanner scanner) {
+        System.out.println("Por favor, digite o numero de sua agência: (Com o digito verificador XXXX-X)");
+        return scanner.next();
+    }
+    private static String requestCustomerName(Scanner scanner) {
+        System.out.println("Por favor, digite o seu nome completo:");
+        return scanner.next();
+    }
+    private static double requestBalance(Scanner scanner) {
+        System.out.println("Por favor, digite o saldo atual de sua conta bancária:");
+        return scanner.nextDouble();
+    }
+    private static void showAccountCreated(int numberAccount, String agency, String customerName, double balance) {
+        System.out.println("Olá "
+                + customerName
+                + ", obrigado por criar uma conta em nosso banco, sua agência é "
+                + agency
+                + ",conta "
+                + numberAccount
+                + " e seu saldo "
+                + balance
+                + " já está disponível para saque.");
     }
 }
